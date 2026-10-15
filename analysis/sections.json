@@ -1,0 +1,17 @@
+[
+  [0, 11, "intro", "intro", "Intro (vocal hook)", "the hook sung over a light synth pad; bass enters bar 5", "title hook sung over a pad; dead stop 19.69-20.52 before the band"],
+  [12, 19, "intro", "riff", "Intro riff", "full band riff, no vocals", "band slams in on bar 12 (20.86 s)"],
+  [20, 35, "verse", "verse", "Verse 1 (the three articles)", "the princess dictates her rules, staccato", "three numbered demands, a check-question, a shouted hook at the end"],
+  [36, 45, "pre-chorus", "pre", "Pre-chorus 1", "sulky, building", "stop 70.19-70.36 right before the chorus downbeat"],
+  [46, 62, "chorus", "chorus", "Chorus 1 (the princess)", "full band + hook", "bar 46 (70.35) = first payoff"],
+  [63, 70, "interlude", "riff", "Interlude 1", "riff, no vocals", ""],
+  [71, 86, "verse", "verse", "Verse 2 (the white horse)", "more demands, playful", "micro-stops 117.61 / 118.83"],
+  [87, 96, "pre-chorus", "pre", "Pre-chorus 2", "softer: scold me a little", "stop 144.34 before the chorus downbeat"],
+  [97, 112, "chorus", "chorus", "Chorus 2 (the prince)", "full band; addressed to the prince", "bar 97 (144.56)"],
+  [113, 120, "post-chorus", "post", "Post-chorus", "frustrated shout, a long held note", ""],
+  [121, 124, "interlude", "riff", "Interlude 2", "short riff", ""],
+  [125, 137, "bridge", "bridge", "Bridge (cake and pudding)", "sweets she gives up, pouting", "gap 202.5-205.0"],
+  [138, 140, "break", "break", "Break", "the turn: a two-bar break before the last chorus", "accent on 205.27"],
+  [141, 158, "last-chorus", "chorus", "Last chorus (the hug)", "climax: the hug, the car", "real accent 208.53 (one beat after the analysed downbeat)"],
+  [159, 171, "outro", "riff", "Outro", "riff to a dead stop", "music stops dead 253.36"]
+]

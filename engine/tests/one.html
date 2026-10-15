@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body style="margin:0">
+<canvas id="out" width="1920" height="1080"></canvas>
+<script src="../core/util.js"></script><script src="../core/assets.js"></script><script src="../core/draw.js"></script>
+<script src="../scenes/royal_art.js"></script>
+<script>
+const Z = window.Z, c = document.getElementById('out').getContext('2d');
+c.fillStyle = '#FFEAF3'; c.fillRect(0, 0, 1920, 1080);
+const kinds = (new URLSearchParams(location.search).get('k') || 'glove').split(',');
+kinds.forEach((k, i) => { const [kind, v] = k.split(':'); const im = Z.royal.art(kind, v); const h = 900, w = im.width / im.height * h; c.drawImage(im, 60 + i * (1800 / kinds.length), 90, w, h); });
+window.done = true;
+</script></body></html>

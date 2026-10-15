@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#888}</style></head><body>
+<canvas id="out" width="1920" height="1080"></canvas>
+<script src="../core/util.js"></script><script src="../core/assets.js"></script><script src="../core/draw.js"></script>
+<script src="../scenes/royal_art.js"></script>
+<script>
+const Z = window.Z, c = document.getElementById('out').getContext('2d');
+c.fillStyle = '#FFF1DF'; c.fillRect(0, 0, 1920, 1080);
+for (let i = 0; i < 24; i++) for (let j = 0; j < 14; j++) if ((i + j) % 2) { c.fillStyle = '#FFE0EC'; c.fillRect(i * 80, j * 80, 80, 80); }
+const items = [['queen','pink'],['king','navy'],['knight','white'],['bishop','mint'],['rook','cream'],['pawn','lilac'],['crown'],['tiara'],['heart'],['cake'],['pudding'],['shoe'],['glove'],['candy'],['macaron'],['lollipop'],['strawberry'],['bow'],['cloche'],['bubble'],['horse'],['queen','cream'],['king','white'],['knight','pink']];
+items.forEach(([k, v], i) => { const im = Z.royal.art(k, v); const col = i % 8, row = Math.floor(i / 8); const bw = 240, bh = 340; const s = Math.min((bw - 20) / im.width, (bh - 30) / im.height);
+  c.drawImage(im, col * bw + (bw - im.width * s) / 2, row * 360 + (bh - im.height * s), im.width * s, im.height * s);
+  c.fillStyle = '#2B1A3F'; c.font = '18px sans-serif'; c.fillText(k + (v ? ':' + v : ''), col * bw + 10, row * 360 + bh + 16); });
+window.done = true;
+</script></body></html>
